@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,26 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Cyberpunk theme colors
+				cyber: {
+					primary: '#8B5CF6', // violet - premium, tech authority
+					secondary: '#06B6D4', // cyan - reliability, precision
+					accent: '#10B981', // emerald - success, validation
+					danger: '#EF4444', // red - bugs, critical issues
+				},
+				neon: {
+					pink: '#EC4899', // energy, disruption
+					blue: '#3B82F6', // trust, stability
+					green: '#84CC16', // growth, optimization
+				},
+				void: '#000000', // depth, mystery
+				ghost: '#f9fafb', // clarity, clean code
+				glitch: {
+					red: '#ff0040',
+					cyan: '#00ffff',
+					yellow: '#ffff00',
+				},
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,12 +104,67 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+				'glow': {
+					'0%, 100%': {
+						textShadow: '0 0 8px rgba(138, 92, 246, 0.6), 0 0 12px rgba(236, 72, 153, 0.4)'
+					},
+					'50%': {
+						textShadow: '0 0 16px rgba(138, 92, 246, 0.8), 0 0 24px rgba(236, 72, 153, 0.6)'
+					}
+				},
+				'pulse-border': {
+					'0%, 100%': {
+						borderColor: 'rgba(6, 182, 212, 0.7)'
+					},
+					'50%': {
+						borderColor: 'rgba(6, 182, 212, 1)'
+					}
+				},
+				'glitch': {
+					'0%, 100%': { 
+						clipPath: 'inset(50% 0 50% 0)',
+						transform: 'translate(-5px, 0)'
+					},
+					'10%': {
+						clipPath: 'inset(40% 0 60% 0)',
+						transform: 'translate(5px, 0)'
+					},
+					'20%': {
+						clipPath: 'inset(20% 0 80% 0)',
+						transform: 'translate(-5px, 0)'
+					},
+					'30%': {
+						clipPath: 'inset(80% 0 20% 0)',
+						transform: 'translate(5px, 0)'
+					},
+					'40%': {
+						clipPath: 'inset(10% 0 90% 0)',
+						transform: 'translate(-5px, 0)' 
+					},
+					'50%': {
+						clipPath: 'inset(90% 0 10% 0)',
+						transform: 'translate(5px, 0)'
+					}
+				},
+				'scanline': {
+					'0%': { transform: 'translateY(-100%)' },
+					'100%': { transform: 'translateY(100%)' }
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' }
+				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'glow': 'glow 2s ease-in-out infinite',
+				'pulse-border': 'pulse-border 2s infinite',
+				'glitch': 'glitch 2s infinite',
+				'scanline': 'scanline 8s linear infinite',
+				'float': 'float 6s ease-in-out infinite',
+			},
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
