@@ -5,7 +5,7 @@ import { ChevronRight } from 'lucide-react';
 
 const HeroSection = () => {
   return (
-    <section className="relative pt-24 pb-20 md:pt-32 md:pb-32 overflow-hidden">
+    <section className="relative py-32 md:py-40 overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <div className="absolute inset-0 bg-grid-pattern opacity-30"></div>
@@ -15,7 +15,7 @@ const HeroSection = () => {
       </div>
       
       <div className="container mx-auto px-6 relative z-10">
-        <div className="flex flex-col items-center text-center">
+        <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
           {/* Badge */}
           <div className="inline-flex items-center px-3 py-1 rounded-full border border-cyber-secondary/50 bg-black/40 text-sm mb-8">
             <span className="inline-block w-2 h-2 bg-cyber-accent rounded-full mr-2 animate-pulse"></span>
@@ -23,32 +23,32 @@ const HeroSection = () => {
           </div>
           
           {/* Main Headline with Glitch Effect */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 glitch-stack max-w-4xl">
+          <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-8 glitch-stack">
             <span>Depuramos a realidade antes que ela derrube seu negócio</span>
             <span>Depuramos a realidade antes que ela derrube seu negócio</span>
             <span>Depuramos a realidade antes que ela derrube seu negócio</span>
           </h1>
           
           {/* Subheadline */}
-          <p className="text-xl md:text-2xl text-white/80 mb-10 max-w-2xl">
+          <p className="text-xl md:text-2xl text-white/80 mb-12 max-w-2xl">
             QA empresarial que pensa 10 passos à frente dos seus usuários
           </p>
           
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 mb-12">
-            <Button className="bg-cyber-primary hover:bg-cyber-primary/80 text-white px-8 py-6 text-lg font-bold flex items-center gap-2 cyber-border">
+          <div className="flex flex-col sm:flex-row gap-6 mb-16 w-full sm:w-auto justify-center">
+            <Button className="bg-cyber-primary hover:bg-cyber-primary/80 text-white px-6 py-6 text-lg font-bold flex items-center gap-2 cyber-border w-full sm:w-auto">
               Escaneie seu app gratuitamente
               <ChevronRight className="h-5 w-5" />
             </Button>
-            <Button variant="outline" className="border-cyber-secondary hover:bg-cyber-secondary/10 text-white px-8 py-6 text-lg font-bold">
+            <Button variant="outline" className="border-cyber-secondary hover:bg-cyber-secondary/10 text-white px-6 py-6 text-lg font-bold w-full sm:w-auto">
               Conheça nossas histórias de guerra
             </Button>
           </div>
           
           {/* Trusted By Section */}
-          <div className="w-full">
-            <p className="text-sm text-white/60 mb-4">EMPRESAS QUE CONFIAM EM NÓS:</p>
-            <div className="flex flex-wrap justify-center gap-8 md:gap-16">
+          <div className="w-full mt-4">
+            <p className="text-sm text-white/60 mb-6">EMPRESAS QUE CONFIAM EM NÓS:</p>
+            <div className="flex flex-wrap justify-center gap-8 md:gap-12">
               {/* Company logos would go here - using placeholders */}
               {[1, 2, 3, 4, 5].map((_, index) => (
                 <div 
