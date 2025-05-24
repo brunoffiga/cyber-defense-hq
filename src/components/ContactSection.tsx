@@ -1,38 +1,35 @@
-
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-
 const ContactSection = () => {
-  const { toast } = useToast();
+  const {
+    toast
+  } = useToast();
   const [formState, setFormState] = useState({
     name: '',
     email: '',
     company: '',
     message: ''
   });
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormState({
       ...formState,
       [e.target.name]: e.target.value
     });
   };
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // This would be replaced with actual form submission
     console.log('Form submitted:', formState);
-    
     toast({
       title: "Formulário recebido",
       description: "Entraremos em contato em breve.",
-      variant: "default",
+      variant: "default"
     });
-    
+
     // Reset form
     setFormState({
       name: '',
@@ -41,9 +38,7 @@ const ContactSection = () => {
       message: ''
     });
   };
-
-  return (
-    <section id="contato" className="py-20 relative">
+  return <section id="contato" className="py-20 relative">
       {/* Background Effects */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <div className="absolute inset-0 bg-grid-pattern opacity-30"></div>
@@ -106,7 +101,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <p className="text-sm text-white/50">Email</p>
-                    <p className="text-white">contato@qaas.com.br</p>
+                    <p className="text-white">contato@qa4u.com.br</p>
                   </div>
                 </div>
               </div>
@@ -119,57 +114,25 @@ const ContactSection = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <label htmlFor="name" className="block text-sm text-white/70">Nome completo</label>
-                    <Input
-                      id="name"
-                      name="name"
-                      value={formState.name}
-                      onChange={handleChange}
-                      className="bg-black/50 border-cyber-secondary/30 focus:border-cyber-secondary focus-visible:ring-cyber-secondary/20 text-white"
-                      required
-                    />
+                    <Input id="name" name="name" value={formState.name} onChange={handleChange} className="bg-black/50 border-cyber-secondary/30 focus:border-cyber-secondary focus-visible:ring-cyber-secondary/20 text-white" required />
                   </div>
                   <div className="space-y-2">
                     <label htmlFor="email" className="block text-sm text-white/70">Email corporativo</label>
-                    <Input
-                      id="email"
-                      name="email"
-                      type="email"
-                      value={formState.email}
-                      onChange={handleChange}
-                      className="bg-black/50 border-cyber-secondary/30 focus:border-cyber-secondary focus-visible:ring-cyber-secondary/20 text-white"
-                      required
-                    />
+                    <Input id="email" name="email" type="email" value={formState.email} onChange={handleChange} className="bg-black/50 border-cyber-secondary/30 focus:border-cyber-secondary focus-visible:ring-cyber-secondary/20 text-white" required />
                   </div>
                 </div>
                 
                 <div className="space-y-2">
                   <label htmlFor="company" className="block text-sm text-white/70">Empresa</label>
-                  <Input
-                    id="company"
-                    name="company"
-                    value={formState.company}
-                    onChange={handleChange}
-                    className="bg-black/50 border-cyber-secondary/30 focus:border-cyber-secondary focus-visible:ring-cyber-secondary/20 text-white"
-                    required
-                  />
+                  <Input id="company" name="company" value={formState.company} onChange={handleChange} className="bg-black/50 border-cyber-secondary/30 focus:border-cyber-secondary focus-visible:ring-cyber-secondary/20 text-white" required />
                 </div>
                 
                 <div className="space-y-2">
                   <label htmlFor="message" className="block text-sm text-white/70">Descreva seu projeto</label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    value={formState.message}
-                    onChange={handleChange}
-                    className="bg-black/50 border-cyber-secondary/30 focus:border-cyber-secondary focus-visible:ring-cyber-secondary/20 text-white min-h-[120px]"
-                    required
-                  />
+                  <Textarea id="message" name="message" value={formState.message} onChange={handleChange} className="bg-black/50 border-cyber-secondary/30 focus:border-cyber-secondary focus-visible:ring-cyber-secondary/20 text-white min-h-[120px]" required />
                 </div>
                 
-                <Button 
-                  type="submit"
-                  className="w-full bg-cyber-primary hover:bg-cyber-primary/80 text-white py-6 font-bold"
-                >
+                <Button type="submit" className="w-full bg-cyber-primary hover:bg-cyber-primary/80 text-white py-6 font-bold">
                   Enviar solicitação
                 </Button>
                 
@@ -184,8 +147,6 @@ const ContactSection = () => {
       
       {/* Decorative Element */}
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-cyber-secondary/50 to-transparent"></div>
-    </section>
-  );
+    </section>;
 };
-
 export default ContactSection;
