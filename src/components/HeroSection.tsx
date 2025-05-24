@@ -1,11 +1,8 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from 'lucide-react';
-
 const HeroSection = () => {
-  return (
-    <section className="relative py-32 md:py-40 overflow-hidden">
+  return <section className="relative py-32 md:py-40 overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <div className="absolute inset-0 bg-grid-pattern opacity-30"></div>
@@ -24,7 +21,7 @@ const HeroSection = () => {
           
           {/* Main Headline with Glitch Effect */}
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-8 glitch-stack">
-            <span>Depuramos a realidade antes que ela derrube seu negócio</span>
+            <span></span>
             <span>Depuramos a realidade antes que ela derrube seu negócio</span>
             <span>Depuramos a realidade antes que ela derrube seu negócio</span>
           </h1>
@@ -50,12 +47,7 @@ const HeroSection = () => {
             <p className="text-sm text-white/60 mb-6">EMPRESAS QUE CONFIAM EM NÓS:</p>
             <div className="flex flex-wrap justify-center gap-8 md:gap-12">
               {/* Company logos would go here - using placeholders */}
-              {[1, 2, 3, 4, 5].map((_, index) => (
-                <div 
-                  key={index} 
-                  className="h-8 w-32 bg-white/5 rounded-md backdrop-blur-sm"
-                ></div>
-              ))}
+              {[1, 2, 3, 4, 5].map((_, index) => <div key={index} className="h-8 w-32 bg-white/5 rounded-md backdrop-blur-sm"></div>)}
             </div>
           </div>
         </div>
@@ -63,8 +55,6 @@ const HeroSection = () => {
       
       {/* Decorative Element */}
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-cyber-secondary/50 to-transparent"></div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
