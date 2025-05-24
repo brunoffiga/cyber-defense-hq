@@ -16,7 +16,7 @@ const HeroSection = () => {
           {/* Badge */}
           <div className="inline-flex items-center px-3 py-1 rounded-full border border-cyber-secondary/50 bg-black/40 text-sm mb-8">
             <span className="inline-block w-2 h-2 bg-cyber-accent rounded-full mr-2 animate-pulse"></span>
-            <span className="text-cyber-accent">99.97% taxa de detecção de bugs • 48h tempo médio de correção</span>
+            <span className="text-cyber-accent">99.7% taxa de detecção de bugs • 48h tempo médio de correção</span>
           </div>
           
           {/* Main Headline with Glitch Effect */}
@@ -27,9 +27,7 @@ const HeroSection = () => {
           </h1>
           
           {/* Subheadline */}
-          <p className="text-xl md:text-2xl text-white/80 mb-12 max-w-2xl">
-            QA empresarial que pensa 10 passos à frente dos seus usuários
-          </p>
+          <p className="text-xl md:text-2xl text-white/80 mb-12 max-w-2xl">QA que pensa 10 passos à frente dos seus usuários</p>
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-6 mb-16 w-full sm:w-auto justify-center">
