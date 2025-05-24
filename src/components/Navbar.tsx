@@ -10,7 +10,11 @@ const Navbar = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-cyber-secondary/30">
       <div className="container mx-auto py-4 px-6 flex items-center justify-between">
         <a href="/" className="flex items-center gap-2">
-          <div className="h-8 w-8 rounded-md bg-cyber-primary animate-pulse-border cyber-border"></div>
+          <img 
+            src="/lovable-uploads/2641dc68-de2c-4c0e-813e-bef8cd74f1d7.png" 
+            alt="QA4U Logo" 
+            className="h-8 w-auto"
+          />
           <div className="font-rajdhani font-bold text-xl neon-text-primary">QA4U</div>
         </a>
         
