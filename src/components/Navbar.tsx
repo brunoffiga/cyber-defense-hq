@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="container mx-auto py-4 px-6 flex items-center justify-between">
         <a href="/" className="flex items-center gap-2">
           <div className="h-8 w-8 rounded-md bg-cyber-primary animate-pulse-border cyber-border"></div>
-          <div className="font-rajdhani font-bold text-xl neon-text-primary">QAaaS</div>
+          <div className="font-rajdhani font-bold text-xl neon-text-primary">QA4U</div>
         </a>
         
         {/* Desktop Navigation */}

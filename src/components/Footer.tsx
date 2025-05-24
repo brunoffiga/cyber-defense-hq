@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const Footer = () => {
@@ -16,7 +15,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-2 mb-6">
               <div className="h-8 w-8 rounded-md bg-cyber-primary cyber-border"></div>
-              <div className="font-rajdhani font-bold text-xl neon-text-primary">QAaaS</div>
+              <div className="font-rajdhani font-bold text-xl neon-text-primary">QA4U</div>
             </div>
             <p className="text-white/70 text-sm">
               Na paisagem digital repleta de bugs, somos a última linha de defesa.
@@ -81,7 +80,7 @@ const Footer = () => {
         
         <div className="border-t border-white/10 mt-10 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-white/50 text-sm mb-4 md:mb-0">
-            © {new Date().getFullYear()} QAaaS Brasil. Todos os direitos reservados.
+            © {new Date().getFullYear()} QA4U Brasil. Todos os direitos reservados.
           </div>
           <div className="flex space-x-6">
             <a href="#" className="text-white/50 hover:text-cyber-secondary text-sm transition-colors">Termos de Serviço</a>
