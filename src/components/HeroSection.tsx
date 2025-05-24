@@ -37,9 +37,7 @@ const HeroSection = () => {
               Escaneie seu app gratuitamente
               <ChevronRight className="h-5 w-5" />
             </Button>
-            <Button variant="outline" className="border-cyber-secondary hover:bg-cyber-secondary/10 text-white px-6 py-6 text-lg font-bold w-full sm:w-auto">
-              Conheça nossas histórias de guerra
-            </Button>
+            <Button variant="outline" className="border-cyber-secondary hover:bg-cyber-secondary/10 text-white px-6 py-6 text-lg font-bold w-full sm:w-auto">Conheça histórias de nossos clientes</Button>
           </div>
           
           {/* Trusted By Section */}
